@@ -1,0 +1,89 @@
+.history-page {
+  padding: 40px 20px;
+  background-color: #fdfbf7;
+  min-height: 100vh;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-card {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  background: #fff;
+  border-left: 5px solid #ff9800;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.order-id {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.order-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-total {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ff5e14;
+}
+
+.order-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.order-items h4, .order-details h4 {
+  margin-top: 0;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.order-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-items li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.order-toppings {
+  font-size: 0.85rem;
+  color: #777;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.order-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .order-body {
+    grid-template-columns: 1fr;
+  }
+}

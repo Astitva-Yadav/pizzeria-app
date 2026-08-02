@@ -1,0 +1,73 @@
+.home-page-exact {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  padding-bottom: 40px;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Our Story Section */
+.our-story-section {
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+
+.our-story-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.our-story-section p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* Home Grid - alternating image / text rows */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #ddd;
+}
+
+.grid-item {
+  padding: 30px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.text-item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.text-item p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}

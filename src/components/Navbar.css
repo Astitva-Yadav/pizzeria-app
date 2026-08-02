@@ -1,0 +1,156 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-brand-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.nav-brand:hover {
+  transform: scale(1.02);
+}
+
+.brand-img {
+  color: #ff9800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+  opacity: 1 !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-count {
+  background-color: #222;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.auth-links .nav-link {
+  color: #ddd;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.btn-icon {
+  background: transparent;
+  color: #ccc;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.btn-icon:hover {
+  color: #f44336;
+  transform: scale(1.1);
+}
