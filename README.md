@@ -16,18 +16,7 @@ A modern and responsive pizza ordering web application built with **React** and 
 
 ---
 
-## 📸 Screenshots
 
-### Home Page
-![Home Page](./screenshots/home.png)
-
-### Order Pizza
-![Order Pizza](./screenshots/order.png)
-
-### Build Your Own Pizza
-![Build Pizza](./screenshots/build.png)
-
----
 
 ## 🛠️ Tech Stack
 
